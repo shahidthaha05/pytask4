@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="form-container">
+            <div>
+            <h4>ADD IMAGES</h4><br>
+            <form action="" method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+                  <div class="mb-2">
+                    
+                    <label for="img" class="form-label">Image:</label>
+                    <input type="file" class="form-control" name="img">
+                  </div>
+                  <div class="form-check mb-2">
+                  </div>
+                  <div>
+                    <a type="submit" href="user_home" class="btn btn-primary">Back</a>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+            </form>
+    </div>
+</body>
+</html>
